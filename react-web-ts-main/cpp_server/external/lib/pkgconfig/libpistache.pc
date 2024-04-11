@@ -1,0 +1,11 @@
+prefix=/workspaces/react-web-ts/cpp_server/external
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: Pistache
+Description: An elegant C++ REST framework
+URL: https://pistacheio.github.io/pistache/
+Version: 0.2.0-git20230707
+Libs: -L${libdir} -lpistache
+Libs.private: -pthread
+Cflags: -I${includedir}
